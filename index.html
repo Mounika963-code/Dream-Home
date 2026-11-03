@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,74 +10,156 @@
 </head>
 <body>
 
+    <!-- Navigation -->
     <header>
-        <h2>Dream Home</h2>
+        <h2>Dream<span>Home</span></h2>
+
         <nav>
             <a href="#home">Home</a>
+            <a href="#properties">Properties</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <h1>Welcome to Your Dream Home</h1>
-            <p>Discover a beautiful place to live and relax.</p>
-            <button>Explore More</button>
+            <p class="tagline">FIND YOUR PERFECT PLACE</p>
+            <h1>Your Dream Home<br>Starts Here</h1>
+            <p>Discover beautiful homes designed for your lifestyle.</p>
+            <a href="#properties" class="btn">Explore Homes</a>
         </div>
     </section>
 
-    <section class="features" id="about">
-        <h2>What Makes a Home Special?</h2>
-
-        <div class="cards">
-            <div class="card">
-                <h3>Beautiful Garden</h3>
-                <p>Enjoy fresh air and greenery.</p>
-            </div>
-
-            <div class="card">
-                <h3>Comfortable Rooms</h3>
-                <p>Make every moment relaxing.</p>
-            </div>
-
-            <div class="card">
-                <h3>Peaceful Living</h3>
-                <p>Experience comfort and happiness.</p>
-            </div>
+    <!-- Features -->
+    <section class="features">
+        <div>
+            <h2>250+</h2>
+            <p>Happy Families</p>
+        </div>
+        <div>
+            <h2>120+</h2>
+            <p>Properties</p>
+        </div>
+        <div>
+            <h2>15+</h2>
+            <p>Years of Experience</p>
         </div>
     </section>
 
-    <section class="preferences" id="contact">
-        <h2>Choose Your Preferences</h2>
+    <!-- Properties -->
+    <section class="properties" id="properties">
+        <p class="tagline">EXPLORE OUR COLLECTION</p>
+        <h2>Find Your Dream Property</h2>
+        <p class="description">
+            Choose a home that matches your needs and lifestyle.
+        </p>
 
-        <label for="room">Choose a room:</label>
-        <select id="room" name="room">
-            <option>Living Room</option>
-            <option>Bedroom</option>
-            <option>Kitchen</option>
-        </select>
+        <div class="property-grid">
+            <article class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80"
+                    alt="Modern luxury house">
+                <div class="card-content">
+                    <h3>Modern Villa</h3>
+                    <p>Elegant design with spacious rooms and a beautiful garden.</p>
+                    <h4>Starting at ₹85 Lakhs</h4>
+                </div>
+            </article>
 
-        <p>What would you like in your home?</p>
+            <article class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80"
+                    alt="Contemporary house interior">
+                <div class="card-content">
+                    <h3>Luxury Home</h3>
+                    <p>A stylish home with modern interiors and premium comfort.</p>
+                    <h4>Starting at ₹1.2 Crore</h4>
+                </div>
+            </article>
 
-        <label>
-            <input type="checkbox" name="feature" value="garden">
-            Garden
-        </label>
-
-        <label>
-            <input type="checkbox" name="feature" value="balcony">
-            Balcony
-        </label>
-
-        <label>
-            <input type="checkbox" name="feature" value="parking">
-            Parking
-        </label>
+            <article class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=900&q=80"
+                    alt="Beautiful family house">
+                <div class="card-content">
+                    <h3>Family House</h3>
+                    <p>A welcoming home with space for your entire family.</p>
+                    <h4>Starting at ₹60 Lakhs</h4>
+                </div>
+            </article>
+        </div>
     </section>
 
-    <footer>
-        <p>© 2026 Dream Home | Designed with HTML and CSS</p>
+    <!-- Home Preferences -->
+    <section class="preferences">
+        <p class="tagline">PERSONALISE YOUR SEARCH</p>
+        <h2>What Does Your Dream Home Look Like?</h2>
+
+        <form>
+            <label for="home-type">Choose your home style:</label>
+            <select id="home-type" name="home-type">
+                <option value="">Select a style</option>
+                <option>Modern Villa</option>
+                <option>Luxury Apartment</option>
+                <option>Independent House</option>
+                <option>Farmhouse</option>
+            </select>
+
+            <label for="budget">Select your budget:</label>
+            <select id="budget" name="budget">
+                <option value="">Choose your budget</option>
+                <option>Below ₹50 Lakhs</option>
+                <option>₹50 Lakhs – ₹1 Crore</option>
+                <option>₹1 Crore – ₹2 Crore</option>
+                <option>Above ₹2 Crore</option>
+            </select>
+
+            <p class="form-heading">Choose the features you want:</p>
+
+            <div class="checkbox-list">
+                <label><input type="checkbox" name="feature" value="Garden"> Garden</label>
+                <label><input type="checkbox" name="feature" value="Swimming Pool"> Swimming Pool</label>
+                <label><input type="checkbox" name="feature" value="Garage"> Garage</label>
+                <label><input type="checkbox" name="feature" value="Smart Home"> Smart Home</label>
+                <label><input type="checkbox" name="feature" value="Solar Energy"> Solar Energy</label>
+            </div>
+
+            <button type="button">Explore Your Options</button>
+            <p class="note">
+                Demo only: the selections are not processed because this website
+                uses HTML and CSS without JavaScript.
+            </p>
+        </form>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div>
+            <p class="tagline">ABOUT DREAM HOME</p>
+            <h2>A Better Place to Call Home</h2>
+            <p>
+                We believe a home is more than a building. It is a place where
+                comfort, happiness, and memories come together.
+            </p>
+        </div>
+
+        <div class="about-box">
+            <h3>Why Choose Us?</h3>
+            <p>✓ Beautiful home designs</p>
+            <p>✓ Options for different budgets</p>
+            <p>✓ Modern and comfortable spaces</p>
+            <p>✓ Homes for every lifestyle</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <footer id="contact">
+        <h2>Dream<span>Home</span></h2>
+        <p>Find the space where your future begins.</p>
+        <p>Email: hello@dreamhome.example</p>
+        <p class="copyright">© 2026 Dream Home. Sample website for learning.</p>
     </footer>
 
 </body>
